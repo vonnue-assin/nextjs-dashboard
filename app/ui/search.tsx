@@ -14,6 +14,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
     console.log(`Searching...${term}`);
 
     const params = new URLSearchParams(searchParams);
+    params.set("page", "1");
     if (term) {
       params.set("query", term);
     } else {
@@ -45,4 +46,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
 
 //Debouncing is a programming practice that limits the rate at which a function can fire.In our case,you only want to query the database when the user has stopped typing.Trigger Event When a event that should be debounced occurs,a timer starts.We can implement debouncing in many ways including manually creating our own debounce function.
 
-//
+//Mutating Data: In the previous chapter you implemented search and pagination using URL search Params and Next.js APIs.
+
+//SERVER ACTIONS : Allows us to asynchronous code directly on the server.They eliminate the need to create API endpoints to mutate your data.Instead you write asynchrous functions that execute on the server and can be invoked from your client components.An advantage of invoking a Server Action within a Server component is progressive enhancement forms work even if JavaScript has not yet loaded on the client.
+
