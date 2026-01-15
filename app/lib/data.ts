@@ -230,3 +230,6 @@ export async function fetchFilteredCustomers(query: string) {
 //------------------------//
 
 //With dynamic rendering,content is rendered on the server for each user at request time Cookies and URL search params is typically only known at request time.
+
+//STREAMING
+// Streaming is a data transfer techique that allows you to break down a route into smaller chunks and progressively stream them from the server ot the client as they become ready... By streaming we can prevent slow data requests from blocking your whole page.
