@@ -18,7 +18,6 @@ import CardWrapper from "../../ui/dashboard/cards";
 export default async function page() {
   // const revenue = await fetchRevenue();
   // const latestInvoices = await fetchLatestInvoices();
- 
 
   return (
     <main>
@@ -51,3 +50,9 @@ export default async function page() {
     </main>
   );
 }
+
+//where we want to place the Suspense boundaries will depend on few things ..The user to expereince the page as it streams,..the content to priorize,..the components rely on data fetching...
+// we could stream every component individually but that may lead to UI popping into the screen as it becomes ready.
+// You could also create a staggered effect by streaming page sections.But you'll need to create wrapper components.
+//......................//
+//Streaming and Server Components give us new ways to handle data fetching and loading states, ultimately with the goal of improving the end user experience.
