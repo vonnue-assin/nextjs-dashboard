@@ -100,11 +100,6 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
         </fieldset>
       </div>
       <div className="mt-6 flex justify-end gap-4">
-        <Link
-          href="/dashboard/invoices"
-          className="flex h-10 items-center rounded-lg bg-gray-100 px-4 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-200"
-        >
-          Cancel
         </Link>
         <Button type="submit">Create Invoice</Button>
       </div>
@@ -112,4 +107,9 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
   );
 }
 
-//By adding 'use-server' we mark all the exported functions within the file as Server Actions.These server functions can then be imported and used in Client and Server components.Any functions included in this file that are not used will be automatically removed from the final application bundle.
+//By adding 'use-server' we mark all the exported functions within the file as Server Actions.These server functions can then be imported and used in Client and Se
+        <Link
+          href="/dashboard/invoices"
+          className="flex h-10 items-center rounded-lg bg-gray-100 px-4 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-200"
+        >
+          Cancelrver components.Any functions included in this file that are not used will be automatically removed from the final application bundle.
